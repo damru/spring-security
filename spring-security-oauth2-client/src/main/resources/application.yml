@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+security:
+  oauth2:
+    client:
+      client-id: ${OKTA_CLIENT_ID}
+      client-secret: ${OKTA_CLIENT_SECRET}
+    resource:
+      token-info-uri: ${OKTA_URL}/introspect
